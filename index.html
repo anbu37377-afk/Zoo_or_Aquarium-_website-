@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Zoo & Aquarium - Explore Wildlife</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -12,6 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- Header / Navbar -->
@@ -20,7 +22,7 @@
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-globe-americas me-2"></i>City Zoo
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,21 +35,24 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="pricing.html">Tickets & Membership</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                     </ul>
-                    
+
                     <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
                         <!-- Theme Toggle -->
-                        <button class="btn btn-outline-secondary rounded-circle border-0 theme-toggle" id="themeToggle" title="Toggle Theme">
+                        <button class="btn btn-outline-secondary rounded-circle border-0 theme-toggle" id="themeToggle"
+                            title="Toggle Theme">
                             <i class="bi bi-moon-fill"></i>
                         </button>
 
-                        <a href="login.html" class="btn btn-outline-primary btn-custom rounded-pill px-4">Login</a>
-                        <a href="register.html" class="btn btn-primary-custom btn-custom rounded-pill px-4">Sign Up</a>
+                        <a href="login.html" class="btn btn-outline-primary btn-custom rounded-pill">Login</a>
+                        <a href="register.html" class="btn btn-primary-custom btn-custom rounded-pill">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -55,12 +60,15 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center" style="background-image: url('https://cdn.motocms.com/src/459x258/66400/66407-original-1200.jpg'); min-height: 85vh;">
+    <section class="hero-section d-flex align-items-center"
+        style="background-image: url('https://cdn.motocms.com/src/459x258/66400/66407-original-1200.jpg'); min-height: 85vh;">
         <div class="hero-overlay"></div>
         <div class="container hero-content text-center">
-            <span class="badge bg-tertiary-custom text-dark mb-3 px-3 py-2 rounded-pill fw-bold">Open Daily: 9AM - 6PM</span>
+            <span class="badge bg-tertiary-custom text-dark mb-3 px-3 py-2 rounded-pill fw-bold">Open Daily: 9AM -
+                6PM</span>
             <h1 class="display-3 fw-bold mb-4">Explore Wildlife Like Never Before</h1>
-            <p class="lead mb-5 mx-auto" style="max-width: 700px; color: #f0f0f0;">Connect with nature, discover rare species, and support global conservation efforts right here in the heart of the city.</p>
+            <p class="lead mb-5 mx-auto" style="max-width: 700px; color: #f0f0f0;">Connect with nature, discover rare
+                species, and support global conservation efforts right here in the heart of the city.</p>
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="pricing.html" class="btn btn-primary-custom btn-lg btn-custom shadow-lg">Book Tickets</a>
                 <a href="about.html" class="btn btn-outline-light btn-lg btn-custom">Learn More</a>
@@ -74,41 +82,51 @@
             <div class="row g-4">
                 <!-- Highlight 1 -->
                 <div class="col-md-4">
-                    <div class="card card-custom h-100 p-4 border-0">
+                    <div class="card card-custom d-flex flex-column h-100 p-4 border-0">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-primary-custom p-3 rounded-circle me-3">
+                            <div class="bg-primary-custom d-flex align-items-center justify-content-center rounded-circle me-3"
+                                style="width: 60px; height: 60px; min-width: 60px;">
                                 <i class="bi bi-ticket-perforated fs-4"></i>
                             </div>
                             <h4 class="mb-0">Timed Entry</h4>
                         </div>
-                        <p class="text-muted">Avoid the crowds with our new timed ticket booking system. Choose your slot and enjoy a relaxed visit.</p>
-                        <a href="pricing.html" class="fw-bold text-decoration-none text-primary-custom">Book Now <i class="bi bi-arrow-right"></i></a>
+                        <p class="text-muted">Avoid the crowds with our new timed ticket booking system. Choose your
+                            slot and enjoy a relaxed visit.</p>
+                        <a href="pricing.html" class="fw-bold text-decoration-none text-primary-custom mt-auto">Book Now
+                            <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Highlight 2 -->
                 <div class="col-md-4">
-                    <div class="card card-custom h-100 p-4 border-0">
+                    <div class="card card-custom d-flex flex-column h-100 p-4 border-0">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-secondary-custom p-3 rounded-circle me-3">
+                            <div class="bg-secondary-custom d-flex align-items-center justify-content-center rounded-circle me-3"
+                                style="width: 60px; height: 60px; min-width: 60px;">
                                 <i class="bi bi-water fs-4"></i>
                             </div>
                             <h4 class="mb-0">Aquarium Zone</h4>
                         </div>
-                        <p class="text-muted">Dive into the deep blue with our massive underwater tunnels and shark exhibits.</p>
-                        <a href="services.html" class="fw-bold text-decoration-none text-secondary-custom">Explore Zone <i class="bi bi-arrow-right"></i></a>
+                        <p class="text-muted">Dive into the deep blue with our massive underwater tunnels and shark
+                            exhibits.</p>
+                        <a href="services.html"
+                            class="fw-bold text-decoration-none text-secondary-custom mt-auto">Explore Zone
+                            <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Highlight 3 -->
                 <div class="col-md-4">
-                    <div class="card card-custom h-100 p-4 border-0">
+                    <div class="card card-custom d-flex flex-column h-100 p-4 border-0">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-tertiary-custom p-3 rounded-circle me-3">
+                            <div class="bg-tertiary-custom d-flex align-items-center justify-content-center rounded-circle me-3"
+                                style="width: 60px; height: 60px; min-width: 60px;">
                                 <i class="bi bi-star fs-4 text-dark"></i>
                             </div>
                             <h4 class="mb-0">Membership</h4>
                         </div>
-                        <p class="text-muted">Become a member for unlimited access, exclusive events, and priority booking slots.</p>
-                        <a href="register.html" class="fw-bold text-decoration-none text-dark">Join Today <i class="bi bi-arrow-right"></i></a>
+                        <p class="text-muted">Become a member for unlimited access, exclusive events, and priority
+                            booking slots.</p>
+                        <a href="register.html" class="fw-bold text-decoration-none text-tertiary-custom mt-auto">Join
+                            Today <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -126,7 +144,8 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="card card-custom h-100">
-                        <img src="https://placehold.co/600x400/2E7D32/fff?text=Lion+Enclosure" class="card-img-top" alt="Lion">
+                        <img src="https://placehold.co/600x400/2E7D32/fff?text=Lion+Enclosure" class="card-img-top"
+                            alt="Lion">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Lion's Den</h5>
                             <p class="card-text text-muted small">Daily Feeding: 2:00 PM</p>
@@ -135,7 +154,8 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card card-custom h-100">
-                        <img src="https://placehold.co/600x400/0277BD/fff?text=Dolphin+Bay" class="card-img-top" alt="Dolphin">
+                        <img src="https://placehold.co/600x400/0277BD/fff?text=Dolphin+Bay" class="card-img-top"
+                            alt="Dolphin">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Dolphin Bay</h5>
                             <p class="card-text text-muted small">Live Show: 11:00 AM & 3:00 PM</p>
@@ -144,7 +164,8 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card card-custom h-100">
-                        <img src="https://placehold.co/600x400/F9A825/000?text=Reptile+House" class="card-img-top" alt="Reptiles">
+                        <img src="https://placehold.co/600x400/F9A825/000?text=Reptile+House" class="card-img-top"
+                            alt="Reptiles">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Reptile House</h5>
                             <p class="card-text text-muted small">Open All Day</p>
@@ -153,7 +174,8 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card card-custom h-100">
-                        <img src="https://placehold.co/600x400/5e35b1/fff?text=Penguin+Cove" class="card-img-top" alt="Penguins">
+                        <img src="https://placehold.co/600x400/5e35b1/fff?text=Penguin+Cove" class="card-img-top"
+                            alt="Penguins">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Penguin Cove</h5>
                             <p class="card-text text-muted small">Feeding: 10:30 AM</p>
@@ -161,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-5">
                 <a href="services.html" class="btn btn-outline-primary btn-custom px-5">View All Attractions</a>
             </div>
@@ -172,18 +194,20 @@
     <section class="section-padding bg-primary-custom text-white text-center">
         <div class="container">
             <h2 class="display-5 fw-bold mb-3">Plan Your Visit Today</h2>
-            <p class="lead mb-4 w-75 mx-auto opacity-75">Secure your spot with our timed ticketing system and help us manage a safer, more enjoyable environment for everyone.</p>
+            <p class="lead mb-4 w-75 mx-auto opacity-75">Secure your spot with our timed ticketing system and help us
+                manage a safer, more enjoyable environment for everyone.</p>
             <a href="pricing.html" class="btn btn-light btn-lg btn-custom text-primary fw-bold">Get Tickets</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer data-bs-theme="dark">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-4 fw-bold"><i class="bi bi-globe-americas me-2"></i>City Zoo</h4>
-                    <p class="text-muted">A world-class sanctuary for wildlife, bringing nature closer to you through education and conservation.</p>
+                    <h4 class="text-primary-custom mb-4 fw-bold"><i class="bi bi-globe-americas me-2"></i>City Zoo</h4>
+                    <p class="text-muted">A world-class sanctuary for wildlife, bringing nature closer to you through
+                        education and conservation.</p>
                     <div class="mt-4">
                         <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
@@ -226,7 +250,8 @@
                     <p class="mb-0 text-muted">&copy; 2026 City Zoo & Aquarium. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-muted text-decoration-none small me-3">Back to Top <i class="bi bi-arrow-up"></i></a>
+                    <a href="#" class="text-muted text-decoration-none small me-3">Back to Top <i
+                            class="bi bi-arrow-up"></i></a>
                 </div>
             </div>
         </div>
@@ -236,4 +261,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
