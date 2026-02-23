@@ -18,11 +18,14 @@
     --bg-body: #F8F9FA;
     --bg-card: #FFFFFF;
     --text-main: #212529;
-    --text-muted: #6C757D;
+    --text-muted: #495057;
+    /* Darker for better contrast in light mode */
     --border-color: #DEE2E6;
     --nav-bg: #FFFFFF;
     --footer-bg: #1A1A1A;
     --footer-text: #E0E0E0;
+    --text-tertiary: #915D00;
+    /* Readable gold/yellow for light mode text */
 
     /* Spacing & Borders */
     --card-radius: 16px;
@@ -43,6 +46,22 @@
     /* Lighter green for dark mode contrast */
     --secondary-color: #039BE5;
     /* Lighter blue */
+    --text-tertiary: #F9A825;
+}
+
+/* Accessibility & Contrast Improvements */
+[data-bs-theme="light"] .text-warning {
+    color: #856404 !important;
+    /* Darker warning for light mode readability */
+}
+
+/* Improve readability of semi-transparent text */
+.opacity-75 {
+    opacity: 0.9 !important;
+}
+
+.opacity-50 {
+    opacity: 0.7 !important;
 }
 
 /* Global Reset & Typography */
@@ -83,7 +102,7 @@ a:hover {
 }
 
 .text-tertiary-custom {
-    color: var(--tertiary-color) !important;
+    color: var(--text-tertiary) !important;
 }
 
 .bg-primary-custom {
@@ -115,6 +134,7 @@ a:hover {
     border: none;
     font-size: 0.9rem;
     /* Smaller button text */
+    white-space: nowrap;
 }
 
 .btn-primary-custom {
@@ -199,6 +219,28 @@ a:hover {
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-color) !important;
+}
+
+/* Specific fix for 1024px (Large Desktop range where navbar gets crowded) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav-link {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 0.75rem;
+    }
+
+    .navbar-nav {
+        gap: 0px !important;
+    }
+
+    .offcanvas-body {
+        gap: 5px !important;
+    }
+
+    .btn-custom {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
 }
 
 /* Theme Toggle */
