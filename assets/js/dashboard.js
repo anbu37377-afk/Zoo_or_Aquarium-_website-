@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Close mobile menu if open (for mobile nav)
             const mobileMenu = document.getElementById('mobileMenu');
             if (mobileMenu && mobileMenu.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
-                if (bsCollapse) bsCollapse.hide();
+                const bsOffcanvas = bootstrap.Offcanvas.getInstance(mobileMenu);
+                if (bsOffcanvas) bsOffcanvas.hide();
             }
         });
     });
