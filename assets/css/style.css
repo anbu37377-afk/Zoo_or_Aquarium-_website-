@@ -441,7 +441,250 @@ footer a:hover {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Animations added for Home Page premium sections */
+/* Home 2 premium sections */
+.premium-experiences {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(46, 125, 50, 0.16), transparent 42%),
+        radial-gradient(circle at 86% 72%, rgba(2, 119, 189, 0.14), transparent 38%),
+        linear-gradient(180deg, #FFFFFF 0%, #F7FAF8 100%);
+}
+
+[data-bs-theme="dark"] .premium-experiences {
+    background:
+        radial-gradient(circle at 12% 18%, rgba(76, 175, 80, 0.18), transparent 42%),
+        radial-gradient(circle at 86% 72%, rgba(3, 155, 229, 0.16), transparent 38%),
+        linear-gradient(180deg, #121B1A 0%, #0F1618 100%);
+}
+
+.premium-eyebrow {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.9rem;
+}
+
+.premium-lead {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+}
+
+.premium-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.benefit-chip {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 12px 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.benefit-chip i {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.experience-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
+    min-height: 180px;
+    transform: translateZ(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.experience-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) 55%, rgba(0, 0, 0, 0.1));
+    z-index: 1;
+}
+
+.experience-card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 18px;
+    color: #FFFFFF;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 50px rgba(0, 0, 0, 0.25);
+}
+
+.experience-card:hover img {
+    transform: scale(1.08);
+}
+
+.experience-card--tall {
+    grid-column: span 7;
+    grid-row: span 2;
+    min-height: 380px;
+}
+
+.experience-card--wide {
+    grid-column: span 5;
+    min-height: 183px;
+}
+
+.experience-card--small {
+    grid-column: span 5;
+    min-height: 183px;
+}
+
+.experience-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 9px;
+    background: rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.command-center {
+    position: relative;
+    overflow: hidden;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #133527 0%, #0A2738 55%, #132D20 100%);
+}
+
+.command-center::before,
+.command-center::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.command-center::before {
+    width: 390px;
+    height: 390px;
+    top: -170px;
+    right: -130px;
+    background: rgba(249, 168, 37, 0.2);
+}
+
+.command-center::after {
+    width: 300px;
+    height: 300px;
+    bottom: -150px;
+    left: -100px;
+    background: rgba(3, 155, 229, 0.18);
+}
+
+.command-center .container {
+    position: relative;
+    z-index: 1;
+}
+
+.command-panel {
+    height: 100%;
+    border-radius: 22px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+}
+
+.metric-tile {
+    height: 100%;
+    border-radius: 14px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.metric-value {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    color: #FFFFFF;
+}
+
+.roadmap-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.roadmap-item:last-child {
+    margin-bottom: 0;
+}
+
+.roadmap-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 6px;
+    background: var(--tertiary-color);
+    box-shadow: 0 0 0 5px rgba(249, 168, 37, 0.18);
+    flex-shrink: 0;
+}
+
+@media (max-width: 991.98px) {
+    .premium-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card--tall,
+    .experience-card--wide,
+    .experience-card--small {
+        grid-column: span 12;
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .experience-card--tall,
+    .experience-card--wide,
+    .experience-card--small {
+        min-height: 210px;
+    }
+
+    .command-panel {
+        padding: 22px;
+    }
+
+    .metric-value {
+        font-size: 1.35rem;
+    }
+}
+
+/* Animations */
 @keyframes floatAnimation {
     0% {
         transform: translateY(0px);
@@ -474,4 +717,42 @@ footer a:hover {
 
 .animate-slide-up {
     animation: slideUpFade 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 {
+    transition-delay: 0.08s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.16s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.24s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-slide-up {
+        animation: none;
+    }
+
+    .reveal-on-scroll,
+    .reveal-on-scroll.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }

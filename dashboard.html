@@ -48,6 +48,33 @@
             background-color: rgba(46, 125, 50, 0.1);
             color: var(--primary-color);
         }
+
+        @media (max-width: 767.98px) {
+            .dashboard-main {
+                width: 100%;
+                min-width: 0;
+                overflow-x: hidden;
+            }
+
+            .dashboard-mobile-header .container-fluid {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+
+            .dashboard-mobile-header .navbar-brand {
+                min-width: 0;
+                max-width: calc(100% - 56px);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .dashboard-menu-toggle {
+                margin-left: auto;
+                flex: 0 0 auto;
+                line-height: 1;
+            }
+        }
     </style>
 </head>
 
@@ -90,13 +117,13 @@
         </div>
 
         <!-- Main Content -->
-        <div class="flex-grow-1 bg-body-tertiary">
+        <div class="flex-grow-1 bg-body-tertiary dashboard-main">
             <!-- Mobile Header -->
-            <nav class="navbar navbar-expand-lg bg-white shadow-sm d-lg-none p-3 sticky-top">
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm d-lg-none p-3 sticky-top dashboard-mobile-header">
                 <div class="container-fluid d-flex justify-content-between align-items-center">
                     <a href="index.html" class="navbar-brand fw-bold text-primary-custom m-0"><i
                             class="bi bi-globe-americas me-2"></i>City Zoo</a>
-                    <button class="btn border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                    <button class="btn border-0 p-0 dashboard-menu-toggle" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#mobileMenu">
                         <i class="bi bi-list fs-1 text-primary-custom"></i>
                     </button>
